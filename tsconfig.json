@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "outDir": "./dist",
+    "strict": true,
+    "removeComments": true,
+    // recommended node 12 config
+    // https://github.com/microsoft/TypeScript/wiki/Node-Target-Mapping
+    "lib": ["ES2019"],
+    "module": "commonjs",
+    "target": "ES2019",
+    // required by openapi generator
+    // https://github.com/ferdikoomen/openapi-typescript-codegen#nodejs-support
+    "esModuleInterop": true
+  },
+  "include": ["generated/**/*"]
+}
